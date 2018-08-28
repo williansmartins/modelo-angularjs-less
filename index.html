@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Index</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <!-- tell iOS devices that this app can work in full screen mode. No need for navbars -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- link the app icons that will be shown on the home screen (iPhone, iPhone4 and iPad) -->
+        <link rel="apple-touch-icon" sizes="57x57"href="imagens/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="imagens/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="imagens/touch-icon-iphone4.png" />
+        <!-- link the start screen image - shown while the app launches -->
+        <link rel="apple-touch-startup-image" href="imagens/startscreen-320x460.png">
+        
+        <!-- CSS VENDOR -->
+        <link href="css/vendor/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="css/vendor/normalize/normalize.css" rel="stylesheet">
+
+        <!-- CSS MINE -->
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        
+    </head>
+    
+    <body id="index" ng-app="principal">
+        <div class="base">
+            <div class="loading-wrapper" loading>
+                <div class="loading"></div>
+                <div class="overlay"></div>
+            </div>    
+            <div ng-view class="view"></div>
+        </div>
+        <div id="script">
+            <!-- VENDOR -->
+            <script src="js/vendor/jquery/jquery.min.js"></script>
+            <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
+            <script src="js/vendor/angular/angular.min.js"></script>
+            <script src="js/vendor/angular-route/angular-route.min.js"></script>
+
+            <!-- APP -->
+            <script src="js/app.js"></script>
+        </div>
+    </body>
+</html>
